@@ -44,23 +44,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
             });
         }
 
+
+
     });
   });
+  $('#refresh').click(function() {
+    setTimeout(location.reload(true), t);
+  });
 
-    // var refreshButton = document.querySelector('#refresh');
-    // refreshButton.addEventListener('click', function(e) {
-    //   e.preventDefault();
-    //   $.ajax({
-    //     url: 'https://bb-election-api.herokuapp.com/',
-    //     method: 'GET',
-    //     datatype: 'json'
-    //   }).done(function(responseData) {
-    //       var candidate = responseData.candidates
-    //       for (var i = 0; i < candidate.length; i++){
-    //           document.querySelector('li').innerHTML = 'Name: ' + candidate[i].name + ' ' + 'Votes: ' + candidate[i].votes;
-    //       }
-    //     });
-    // })
 
 
 });
